@@ -1,16 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 
-const SimpleComponent = () => {
-  const [name, setName] = useState("Jaspin");
-  const [details, setDetails] = useState({
-    mobNo: "3456789",
-    address: "dfghjk",
-  });
+const SimpleComponent = (props) => {
+const {changeName, name, details} = props;
 
-  const changeName = () => {
-    setName("S2RB");
-    setDetails({ mobNo: "3456789", address: "xxxxxxxxxxx" });
-  };
+//     //every time get executed
+// useEffect(()=>{
+//   alert("I am rendering evertime!")
+// });
+
+// // Component Did mount logic--> First time rendering
+// useEffect(()=>{
+//   setTimeout(() => {
+//     alert("Hi, Welcome to React Training!")
+//   }, 1000);
+// }, []);
+
+// // Component will receive props
+// useEffect(()=>{
+//   alert("Hi, Updating in Functional Component!")
+// }, [name]);
+
+// // Component will unmount 
+// useEffect(()=>{
+//   return(()=>{
+//   //You can add your code for unmounting phase of component
+//   alert("Functional Component Removed ")
+//    })
+//   }, []);
+
+  
 
   console.log("changeName--->", name);
   return (
