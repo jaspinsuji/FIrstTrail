@@ -1,0 +1,24 @@
+/*Table*/
+#detailsView{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#detailsView td,#detailsView th{
+    border: 1px solid #ddd;
+    padding :8px;
+}
+#detailsView tr:th-child(even){background-color:#f2f2f2;}
+#detailsView tr:hover{background-color: #ddd;}
+#detailsView th{
+    padding-top: 12px;
+    padding: bottom 12px;
+    text-align: left;
+    background-color:#1690fb;
+    color:#fff;
+}
+button{
+    background-color:#1690fb;
+    color:#fff;
+    padding: 12px 20px;
+}
